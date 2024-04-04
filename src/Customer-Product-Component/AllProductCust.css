@@ -1,0 +1,116 @@
+/* Styling for the AllProductCust component */
+.all-product-cust {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+   
+}
+
+.categories-paper {
+    flex: 0 0 200px; /* Adjust the width as needed, e.g., 200px */
+    padding: 16px;
+    max-height: 300px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.category-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.category-list {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    position: relative;
+    right: 30px;
+    flex-direction: column;
+}
+
+.category-item {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.category-item:hover {
+    background-color: #BBDEFB;
+}
+
+.category-item.selected {
+    background-color: #1565C0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 20vmin;
+}
+
+.product-cards .MuiCard-root {
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+} .product-cards .MuiCard-root {
+    width: 100%;
+    max-width: 276px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.product-cards .MuiCard-root:hover {
+    transform: scale(1.03);
+}
+
+.image-container {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid #e0e0e0; /* Add a border around the image container */
+    border-radius: 4px; /* Add border radius for rounded corners */
+}
+
+.image-container img {
+    margin-top: 60px;
+    max-height: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+}
+
+
+.MuiCardContent-root {
+    text-align: center;
+}
+
+.MuiCardActions-root {
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.MuiButton-root {
+    background-color: #2196F3;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.MuiButton-root:hover {
+    background-color: #1976D2;
+}
